@@ -6,6 +6,10 @@
   justify-content: space-around;
 
   width: 100%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom: 10px solid #380f61;
+  box-shadow: 0px 10px 10px #380f61;
 }
 
 .main {
@@ -91,6 +95,7 @@
   {
     .button-contact{
         transform: translateY(260px);
-    }
+    }   
+
 
   }

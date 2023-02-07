@@ -5,6 +5,7 @@ import fontawesome from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import LogoNav from './assets/logo.png'
 
 
 export default function Nav() {
@@ -24,10 +25,13 @@ export default function Nav() {
     }
 
   return (
-    <div data-aos="fade-out" data-aos-offset="500" className="column-nav">
+    <div className="column-nav">
         <div className="menu-container">
+
         <FontAwesomeIcon className="menu-nav" icon="fa-solid fa-bars" data-aos="zoom-out" onClick={handleClick}/>
+
         </div>
+    
       <div className={style}>
 
 
