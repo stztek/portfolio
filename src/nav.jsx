@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
+
 export default function Nav() {
     const [style, setStyle] = useState("nav-container");
     fontawesome.library.add(faBars);

@@ -2,6 +2,7 @@ import "./css/mainContainer.css";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
+import Logo from './assets/logo.png'
 
 export default function Main() {
     useEffect(()=>{
@@ -10,7 +11,8 @@ export default function Main() {
   return (
     <div className="main-container">
       <div className="main" >
-        <h1 className="h2-main" data-aos="fade-right" data-aos-anchor-placement="bottom-center">Fede Cirino</h1>
+  
+        <img src={Logo} alt="Logo" data-aos="fade-right" data-aos-anchor-placement="bottom-center"/>
         <p data-aos="fade-right">Frontend Developer</p>
       </div>
 
