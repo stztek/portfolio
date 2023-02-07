@@ -2,7 +2,7 @@ import "./css/mainContainer.css";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
-import Logo from './assets/logogrande.png'
+import Logo from './assets/superlogo.png'
 
 export default function Main() {
     useEffect(()=>{
