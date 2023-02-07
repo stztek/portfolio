@@ -1,0 +1,96 @@
+.main-container {
+  background-color: #3B185F;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 100px;
+
+  width: 345px;
+}
+
+.button-contact {
+
+  background-color: #A12568;
+  color: #FEC260;
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-contact:hover {
+  animation-name: anim-button;
+  animation-duration: 160ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.button-contact:not(:hover) {
+    animation-name: anim-not-button;
+    animation-duration: 160ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+  .h2-main {
+    font-size: 40px;
+  }
+  
+  .p-main-container {
+    text-align: center;
+  }
+
+  
+
+@keyframes anim-button {
+  from {
+    width: 100px;
+    height: 50px;
+    box-shadow: 0px 0px 0px #A12568;
+  }
+
+  to {
+    width: 105px;
+    height: 55px;
+    box-shadow: 0px 0px 10px #A12568;
+    text-shadow: 0px 0px 10px #FEC260;
+    font-size: 18px;
+  }
+}
+
+@keyframes anim-not-button {
+    from {
+      width: 105px;
+      height: 55px;
+      box-shadow: 0px 0px 10px #A12568;
+      text-shadow: 0px 0px 10px #FEC260;
+      font-size: 18px;
+    }
+  
+    to {
+      width: 100px;
+      height: 50px;
+    }
+  }
+
+
+  @media (max-width: 700px)
+  {
+    .button-contact{
+        transform: translateY(260px);
+    }
+
+  }

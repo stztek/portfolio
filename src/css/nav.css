@@ -1,0 +1,135 @@
+.nav-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: #2a0944;
+  animation-name: anim-responsive-not;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform: translateY(0px);
+}
+
+.nav-container-responsive {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translateY(0px);;
+
+  background-color: #2a0944;
+  border-bottom-right-radius: 4px;
+
+  animation-name: anim-responsive;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes anim-responsive {
+  from {
+    opacity: 0;
+    transform: translate(-100px, 40px);
+  }
+
+  to {
+    opacity: 100;
+    transform: translate(0px, 40px);
+  }
+}
+
+@keyframes anim-responsive-not {
+  from {
+
+  }
+
+  to {
+ 
+  }
+}
+
+.a {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.a:hover {
+  animation-name: anim-a;
+  animation-duration: 250ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.a:not(:hover) {
+  animation-name: anim-not-a;
+  animation-duration: 50ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.column-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-nav {
+  margin: 5px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-40px);
+}
+@keyframes anim-a {
+  from {
+    border-bottom: 0px dotted #a12568;
+  }
+  to {
+    border-bottom: 2px dotted #a12568;
+  }
+}
+
+@keyframes anim-not-a {
+  from {
+    border-bottom: 2px dotted #a12568;
+  }
+  to {
+    border-bottom: 0px dotted #a12568;
+  }
+}
+
+@media (max-width: 700px) {
+  .column-nav {
+    flex-direction: column;
+    align-items: baseline;
+    text-align: baseline;
+    
+  }
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-100px, 40px);
+  }
+  .nav-container-responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+  }
+  .menu-container {
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 700px){
+
+    
+}

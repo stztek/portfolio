@@ -1,0 +1,8 @@
+::-webkit-scrollbar {
+  background: #A12568;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FEC260;
+}
