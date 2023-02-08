@@ -5,6 +5,7 @@ import "./css/App.css";
 import Main from "./mainContainer.jsx";
 import Nav from "./nav.jsx";
 import Footer from "./footer";
+import Contact from "./contact";
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
     <Nav />
     <Main />
     <About/>
+    <Contact/>
     <Footer/>
   </div>
   )

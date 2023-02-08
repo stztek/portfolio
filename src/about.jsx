@@ -9,7 +9,7 @@ import ReactLogo from "./assets/reactlogo.png"
 export default function About() {
   return (
     <div className="cont">
-      <div className="about-container" data-aos="zoom-in" >
+      <div className="about-container" data-aos="zoom-in" id="about">
         <h1 data-aos="zoom-out">Sobre mi</h1>
         <p className="p-about" data-aos="zoom-out">
           Mi nombre es Federico, tengo 28 años y actualmente vivo en Cordoba,
@@ -26,7 +26,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="skills-container" data-aos="zoom-in">
+      <div className="skills-container" data-aos="zoom-in" data-aos-anchor-placement="right-top" >
         <h2 data-aos="zoom-out">Skills</h2>
         <div className="list-skills" data-aos="zoom-out">
         <div className="skill-container" >

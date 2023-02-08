@@ -26,6 +26,10 @@
 .button-contact {
   background-color: #a12568;
   color: #fec260;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
   font-size: 16px;
   width: 100px;
   height: 50px;
@@ -33,6 +37,12 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.button-contact:focus-within
+{
+  background-color: #721a49;
+}
+
 
 .button-contact:hover {
   animation-name: anim-button;
