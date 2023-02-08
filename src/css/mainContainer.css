@@ -1,10 +1,10 @@
 .main-container {
-  background-color: #3B185F;
+  background-color: #3b185f;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-
+  margin-bottom: 100px;
   width: 100%;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -24,9 +24,8 @@
 }
 
 .button-contact {
-
-  background-color: #A12568;
-  color: #FEC260;
+  background-color: #a12568;
+  color: #fec260;
   font-size: 16px;
   width: 100px;
   height: 50px;
@@ -43,59 +42,80 @@
 }
 
 .button-contact:not(:hover) {
-    animation-name: anim-not-button;
-    animation-duration: 160ms;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-  }
+  animation-name: anim-not-button;
+  animation-duration: 160ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
 
-  .h2-main {
-    font-size: 40px;
-  }
-  
-  .p-main-container {
-    text-align: center;
-  }
+.h2-main {
+  font-size: 40px;
+}
 
-  
+.p-main-container {
+  text-align: center;
+}
 
 @keyframes anim-button {
   from {
     width: 100px;
     height: 50px;
-    box-shadow: 0px 0px 0px #A12568;
+    box-shadow: 0px 0px 0px #a12568;
+
+
   }
 
   to {
     width: 105px;
     height: 55px;
-    box-shadow: 0px 0px 10px #A12568;
-    text-shadow: 0px 0px 10px #FEC260;
+    box-shadow: 0px 0px 10px #a12568;
+    text-shadow: 0px 0px 10px #fec260;
     font-size: 18px;
   }
 }
 
 @keyframes anim-not-button {
-    from {
-      width: 105px;
-      height: 55px;
-      box-shadow: 0px 0px 10px #A12568;
-      text-shadow: 0px 0px 10px #FEC260;
-      font-size: 18px;
-    }
-  
-    to {
-      width: 100px;
-      height: 50px;
-    }
+  from {
+    width: 105px;
+    height: 55px;
+    box-shadow: 0px 0px 10px #a12568;
+    text-shadow: 0px 0px 10px #fec260;
+    font-size: 18px;
   }
 
-
-  @media (max-width: 700px)
-  {
-    .button-contact{
-        transform: translateY(260px);
-    }   
-
-
+  to {
+    width: 100px;
+    height: 50px;
   }
+}
+
+@media (max-width: 700px) {
+  .button-contact {
+    transform: translateY(260px);
+  }
+  .main-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .main {
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  .button-contact {
+    transform: translateY(260px);
+  }
+  .main-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .main {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

@@ -4,6 +4,7 @@ import About from "./about";
 import "./css/App.css";
 import Main from "./mainContainer.jsx";
 import Nav from "./nav.jsx";
+import Footer from "./footer";
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
     <Nav />
     <Main />
     <About/>
+    <Footer/>
   </div>
   )
 

@@ -1,0 +1,19 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b185f;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: 10px 0px 10px #380f61;
+}
+
+.footer-boxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

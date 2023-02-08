@@ -11,6 +11,8 @@
   animation-iteration-count: 1;
 
   transform: translateY(0px);
+  border-top-right-radius: 40px;
+
 }
 
 .nav-container-responsive {
@@ -19,7 +21,8 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  transform: translateY(0px);;
+  transform: translateY(0px);
+
 
   background-color: #2a0944;
   border-bottom-right-radius: 4px;
@@ -54,7 +57,9 @@
 
 .a {
   margin: 10px;
+  
   text-decoration: none;
+
 }
 
 .a:hover {
@@ -73,14 +78,20 @@
 .column-nav {
   display: flex;
   flex-direction: row;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   background-color: #3B185F;
+  z-index: 1;
+
+  
 }
 .menu-nav {
   margin: 5px;
   color: white;
   font-size: 30px;
   cursor: pointer;
+  
 }
 
 .menu-container {
@@ -88,6 +99,9 @@
   align-items: center;
   justify-content: space-between;
   transform: translateY(-40px);
+  border-top-right-radius: 40px;
+
+
 }
 @keyframes anim-a {
   from {
