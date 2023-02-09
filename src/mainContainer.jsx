@@ -13,8 +13,8 @@ export default function Main() {
 
 
   return (
-    <div className="main-container"  id="home">
-      <div className="main">
+    <div className="main-container"  id="home"  data-aos="fade-down" data-aos-duration="2000">
+      <div className="main" >
         <img
           src={Logo}
           alt="Logo"
