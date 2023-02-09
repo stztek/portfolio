@@ -2,13 +2,22 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./css/about.css";
 
-import HTMLlogo from "./assets/htmllogo.png";
-import CSSlogo from "./assets/csslogo.png";
-import JSlogo from "./assets/jslogo.png";
-import ReactLogo from "./assets/reactlogo.png";
-import GitLogo from "./assets/gitlogo.png";
+import { Suspense, lazy } from "react";
+
+const HTMLlink = lazy(() => import("./components/htmllink.jsx"));
+const CSSlink = lazy(() => import("./components/csslink.jsx"));
+const JSlink = lazy(() => import("./components/jslink.jsx"));
+const ReactLink = lazy(() => import("./components/reactlink.jsx"));
+const GitLink = lazy(() => import("./components/gitlink.jsx"));
 
 export default function About() {
+  const Loading = () => {
+    return (
+      <div className="loading-center">
+        <div className="loading"></div>
+      </div>
+    );
+  };
   return (
     <div className="cont">
       <div className="about-container" data-aos="zoom-in" id="about">
@@ -35,49 +44,25 @@ export default function About() {
       >
         <h2 data-aos="zoom-out">Skills</h2>
         <div className="list-skills" data-aos="zoom-out">
-          <div className="skill-container">
-            <p className="p-skills">HTML</p>
-            <img src={HTMLlogo} className="img-skill" data-aos="zoom-out"></img>
-            <div className="barra-skills" data-aos="zoom-out">
-              <div className="progreso-skills-html" data-aos="zoom-out"></div>
-            </div>
-          </div>
+          <Suspense fallback={Loading()}>
+            <HTMLlink />
+          </Suspense>
 
-          <div className="skill-container">
-            <p className="p-skills">CSS</p>
-            <img src={CSSlogo} className="img-skill" data-aos="zoom-out"></img>
-            <div className="barra-skills" data-aos="zoom-out">
-              <div className="progreso-skills-css" data-aos="zoom-out"></div>
-            </div>
-          </div>
+          <Suspense fallback={Loading()}>
+            <CSSlink/>
+          </Suspense>
 
-          <div className="skill-container">
-            <p className="p-skills">JavaScript</p>
-            <img src={JSlogo} className="img-skill" data-aos="zoom-out"></img>
-            <div className="barra-skills" data-aos="zoom-in">
-              <div className="progreso-skills-js" data-aos="zoom-out"></div>
-            </div>
-          </div>
+          <Suspense fallback={Loading()}>
+            <JSlink/>
+          </Suspense>
 
-          <div className="skill-container">
-            <p className="p-skills">React</p>
-            <img
-              src={ReactLogo}
-              className="img-skill"
-              data-aos="zoom-out"
-            ></img>
-            <div className="barra-skills" data-aos="zoom-in">
-              <div className="progreso-skills-react" data-aos="zoom-out"></div>
-            </div>
-          </div>
+          <Suspense fallback={Loading()}>
+            <ReactLink/>
+          </Suspense>
 
-          <div className="skill-container">
-            <p className="p-skills">Git</p>
-            <img src={GitLogo} className="img-skill" data-aos="zoom-out"></img>
-            <div className="barra-skills" data-aos="zoom-in">
-              <div className="progreso-skills-git" data-aos="zoom-out"></div>
-            </div>
-          </div>
+          <Suspense fallback={Loading()}>
+            <GitLink/>
+          </Suspense>
         </div>
       </div>
     </div>
