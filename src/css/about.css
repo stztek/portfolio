@@ -1,6 +1,6 @@
 .cont {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
@@ -26,9 +26,10 @@
   margin-top: 75px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 60%;
   padding-bottom: 15px;
-
+  justify-content: space-around;
+  align-items: center;
   min-height: 300px;
   text-align: center;
   background-color: #3b185f;
@@ -44,6 +45,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .skill-container {
@@ -57,6 +59,153 @@
 .p-about {
   width: 100%;
 }
+
+.barra-skills {
+    margin-top: 10px;
+    margin-left: 16px;
+  width: 100px;
+  height: 10px;
+  background-color: #a12568;
+
+  border-radius: 10px;
+
+}
+
+
+
+.progreso-skills-html {
+  background-color: #fec260;
+  height: 100%;
+  border-radius: 10px;
+
+  width: 10%;
+
+  
+  animation-name: anim-skills-html;
+  animation-duration: 6.27s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes anim-skills-html {
+    0%{
+        width: 10%;
+    }
+
+    100%{
+        width: 83%;
+    }
+    
+}
+
+
+
+.progreso-skills-css {
+    background-color: #fec260;
+    height: 100%;
+    border-radius: 10px;
+  
+    width: 10%;
+
+      
+  animation-name: anim-skills-css;
+  animation-duration: 4.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  }
+
+  @keyframes anim-skills-css {
+    0%{
+        width: 10%;
+    }
+
+    100%{
+        width: 70%;
+    }
+    
+}
+
+  .progreso-skills-js {
+    background-color: #fec260;
+    height: 100%;
+    border-radius: 10px;
+  
+    width: 10%;
+
+      
+  animation-name: anim-skills-js;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  }
+
+  @keyframes anim-skills-js {
+    0%{
+        width: 10%;
+    }
+
+    100%{
+        width: 60%;
+    }
+
+    
+    
+}
+
+.progreso-skills-react {
+    background-color: #fec260;
+    height: 100%;
+    border-radius: 10px;
+  
+    width: 10%;
+
+      
+  animation-name: anim-skills-react;
+  animation-duration: 7.7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  }
+
+  @keyframes anim-skills-react {
+    0%{
+        width: 10%;
+    }
+
+    100%{
+        width: 66%;
+    }
+
+    
+    
+}
+
+.progreso-skills-git {
+    background-color: #fec260;
+    height: 100%;
+    border-radius: 10px;
+  
+    width: 10%;
+
+      
+  animation-name: anim-skills-git;
+  animation-duration: 5.7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  }
+
+  @keyframes anim-skills-git {
+    0%{
+        width: 10%;
+    }
+
+    100%{
+        width: 77%;
+    }
+
+    
+    
+}
+
 
 .p-skills:hover {
   border-bottom: 1px solid #a12568;
@@ -87,3 +236,5 @@
     width: 80%;
   }
 }
+
+  

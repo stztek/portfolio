@@ -2,10 +2,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./css/about.css";
 
-import HTMLlogo from "./assets/htmllogo.png"
-import CSSlogo from "./assets/csslogo.png"
-import JSlogo from "./assets/jslogo.png"
-import ReactLogo from "./assets/reactlogo.png"
+import HTMLlogo from "./assets/htmllogo.png";
+import CSSlogo from "./assets/csslogo.png";
+import JSlogo from "./assets/jslogo.png";
+import ReactLogo from "./assets/reactlogo.png";
+import GitLogo from "./assets/gitlogo.png";
+
 export default function About() {
   return (
     <div className="cont">
@@ -26,29 +28,56 @@ export default function About() {
         </p>
       </div>
 
-      <div className="skills-container" data-aos="zoom-in" data-aos-anchor-placement="right-top" >
+      <div
+        className="skills-container"
+        data-aos="zoom-in"
+        data-aos-anchor-placement="right-top"
+      >
         <h2 data-aos="zoom-out">Skills</h2>
         <div className="list-skills" data-aos="zoom-out">
-        <div className="skill-container" >
-          <p className="p-skills" >HTML</p>
-          <img src={HTMLlogo} className="img-skill" data-aos="zoom-out"></img>
+          <div className="skill-container">
+            <p className="p-skills">HTML</p>
+            <img src={HTMLlogo} className="img-skill" data-aos="zoom-out"></img>
+            <div className="barra-skills" data-aos="zoom-out">
+              <div className="progreso-skills-html" data-aos="zoom-out"></div>
+            </div>
           </div>
 
           <div className="skill-container">
-          <p className="p-skills">CSS</p>
-          <img src={CSSlogo} className="img-skill" data-aos="zoom-out"></img>
+            <p className="p-skills">CSS</p>
+            <img src={CSSlogo} className="img-skill" data-aos="zoom-out"></img>
+            <div className="barra-skills" data-aos="zoom-out">
+              <div className="progreso-skills-css" data-aos="zoom-out"></div>
+            </div>
           </div>
 
           <div className="skill-container">
-          <p className="p-skills">JavaScript</p>
-          <img src={JSlogo} className="img-skill" data-aos="zoom-out"></img>
+            <p className="p-skills">JavaScript</p>
+            <img src={JSlogo} className="img-skill" data-aos="zoom-out"></img>
+            <div className="barra-skills" data-aos="zoom-in">
+              <div className="progreso-skills-js" data-aos="zoom-out"></div>
+            </div>
           </div>
 
           <div className="skill-container">
-          <p className="p-skills">React</p>
-          <img src={ReactLogo} className="img-skill" data-aos="zoom-out"></img>
+            <p className="p-skills">React</p>
+            <img
+              src={ReactLogo}
+              className="img-skill"
+              data-aos="zoom-out"
+            ></img>
+            <div className="barra-skills" data-aos="zoom-in">
+              <div className="progreso-skills-react" data-aos="zoom-out"></div>
+            </div>
           </div>
 
+          <div className="skill-container">
+            <p className="p-skills">Git</p>
+            <img src={GitLogo} className="img-skill" data-aos="zoom-out"></img>
+            <div className="barra-skills" data-aos="zoom-in">
+              <div className="progreso-skills-git" data-aos="zoom-out"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
