@@ -32,6 +32,7 @@ export default function AdminPanel() {
     <div className="box-admin">
       <h1>Admin Panel</h1>
       <div className="admin-container">{listCont}</div>
+      <a href="/">Volver al incio</a>
     </div>
   );
 }
