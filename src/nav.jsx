@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+
 export const ScrollLink = (props) => {
   const handleClickSmooth = (e) => {};
   return <Link {...props} onClick={handleClickSmooth} />;

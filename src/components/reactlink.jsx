@@ -9,7 +9,7 @@ return (
     <img
       src={ReactLogo}
       className="img-skill"
-      data-aos="zoom-out"
+      data-aos="flip-left"
     ></img>
     <div className="barra-skills" data-aos="zoom-in">
       <div className="progreso-skills-react" data-aos="zoom-out"></div>

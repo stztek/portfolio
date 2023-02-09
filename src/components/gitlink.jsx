@@ -7,7 +7,7 @@ export default function GitLink()
         
         <div className="skill-container">
         <p className="p-skills">Git</p>
-        <img src={GitLogo} className="img-skill" data-aos="zoom-out"></img>
+        <img src={GitLogo} className="img-skill" data-aos="flip-left"></img>
         <div className="barra-skills" data-aos="zoom-in">
           <div className="progreso-skills-git" data-aos="zoom-out"></div>
         </div>
